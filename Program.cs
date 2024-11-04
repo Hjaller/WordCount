@@ -29,10 +29,8 @@ namespace WordCount
                 
             while ((index = text.IndexOf(word, index, StringComparison.OrdinalIgnoreCase)) != -1)
             {
-                Console.WriteLine($"Found '{word}' at index {index}");
                 count++;
                 index += word.Length;
-                Console.WriteLine($"Index is now {index}");
             }
 
             return count;
